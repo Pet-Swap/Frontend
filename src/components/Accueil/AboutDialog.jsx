@@ -1,22 +1,25 @@
-import React from 'react';
+import { Button } from '../ui/button';
 import {
   Dialog,
-  DialogTrigger,
+  DialogClose,
   DialogContent,
+  DialogDescription,
   DialogHeader,
   DialogTitle,
-  DialogDescription,
-  DialogClose,
+  DialogTrigger,
 } from '../ui/dialog';
-import { Button } from '../ui/button';
 
-const AboutDialog = () => {
+const AboutDialog = ({ triggerButton }) => {
+  const defaultTrigger = (
+    <Button variant="link" className="text-gray-600 hover:text-gray-900">
+      À propos
+    </Button>
+  );
+
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="link" className="text-gray-600 hover:text-gray-900">
-          À propos
-        </Button>
+        {triggerButton || defaultTrigger}
       </DialogTrigger>
       <DialogContent className="max-w-4xl p-6">
         <DialogHeader>

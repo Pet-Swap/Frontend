@@ -1,9 +1,7 @@
-import React from 'react'
+import SwipeInterface from '../components/Swipe/SwipeInterface';
 
 function Swipe() {
-  return (
-    <div>Swipe</div>
-  )
+    return <SwipeInterface />;
 }
 
-export default Swipe
+export default Swipe;

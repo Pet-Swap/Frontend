@@ -1,24 +1,27 @@
-import React from 'react';
+import { Button } from '../ui/button';
 import {
   Dialog,
-  DialogTrigger,
+  DialogClose,
   DialogContent,
+  DialogDescription,
   DialogHeader,
   DialogTitle,
-  DialogDescription,
-  DialogClose,
+  DialogTrigger,
 } from '../ui/dialog';
-import { Button } from '../ui/button';
 import { Input } from '../ui/input';
 import { Textarea } from '../ui/textarea';
 
-const ParticipateDialog = () => {
+const ParticipateDialog = ({ triggerButton }) => {
+  const defaultTrigger = (
+    <Button variant="link" className="text-gray-600 hover:text-gray-900">
+      Participer
+    </Button>
+  );
+
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant="link" className="text-gray-600 hover:text-gray-900">
-          Participer
-        </Button>
+        {triggerButton || defaultTrigger}
       </DialogTrigger>
       <DialogContent className="max-w-3xl p-6">
         <DialogHeader>

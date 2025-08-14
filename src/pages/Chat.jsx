@@ -1,9 +1,8 @@
-import React from 'react'
+import ChatInterface from '../components/Messages/ChatInterface';
 
 function Chat() {
-  return (
-    <div>Chat</div>
-  )
+  return <ChatInterface />;
 }
+
 
 export default Chat
