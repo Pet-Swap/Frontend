@@ -1,9 +1,5 @@
 # PetSwap Frontend 🐾
 
-[![CI - Build and Test](https://github.com/Pet-Swap/Frontend/actions/workflows/ci.yml/badge.svg?branch=develop)](https://github.com/Pet-Swap/Frontend/actions/workflows/ci.yml)
-[![Code Quality](https://github.com/Pet-Swap/Frontend/actions/workflows/code-quality.yml/badge.svg?branch=develop)](https://github.com/Pet-Swap/Frontend/actions/workflows/code-quality.yml)
-[![Deploy](https://github.com/Pet-Swap/Frontend/actions/workflows/deploy.yml/badge.svg?branch=develop)](https://github.com/Pet-Swap/Frontend/actions/workflows/deploy.yml)
-
 [![React](https://img.shields.io/badge/React-19.0.0-blue.svg)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-6.2.0-brightgreen.svg)](https://vitejs.dev/)
 [![TailwindCSS](https://img.shields.io/badge/TailwindCSS-4.0.14-blue.svg)](https://tailwindcss.com/)
